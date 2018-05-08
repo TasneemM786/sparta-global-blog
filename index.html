@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!-- Div: Divide sections  -->
+    <div class="header">
+      <h2>Blog Name</h2>
+    </div>
+    <!-- Creates rows and columns -->
+    <div class="row">
+      <div class="leftcolumn">
+        <!-- Cards: CSS blog_post: Javascript  -->
+        <div class="card blog_post">
+          <h2>Blog HTML page</h2>
+          <h5>May 8 2018</h5>
+          <p>Learned how to make a blog layout html page today, added functioality with JavaScript.</p>
+          <button type="button" name="button" onclick='deleteBlogPost(this)'>Remove</button>
+        </div>
+        <!-- Add, View and Delete feature added twice  -->
+        <div class="card blog_post">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, May 8 2018</h5>
+          <p>Some text..</p>
+          <button type="button" name="button" onclick='deleteBlogPost(this)'>Remove</button>
+        </div>
+        <div class="card blog_post">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, May 8 2018</h5>
+          <p>Some text..</p>
+          <button type="button" name="button" onclick='deleteBlogPost(this)'>Remove</button>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height:100px;">Image</div>
+          <p>Some text about me..</p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg">Image</div><br>
+          <div class="fakeimg">Image</div><br>
+          <div class="fakeimg">Image</div>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Submit a new blog</h2>
+      <!-- input elements are used like a form element -->
+      <br>
+      <!-- ID: used to manipulate the element with the specific id through CSS and JavaScript. -->
+      <input type="text" id='blog_title' value="Title here...">
+      <br>
+      <input type="text" id='blog_date' value="Date here...">
+      <br>
+      <!-- Adding text -->
+      <textarea id='blog_text' rows="8" cols="80">Write your blog here...</textarea>
+      <br>
+      <!-- Clicking submit -->
+      <button type="button" name="button" onclick="addBlogPost()">submit</button>
+    </div>
+    <script src='index.js'></script>
+  </body>
+</html>
